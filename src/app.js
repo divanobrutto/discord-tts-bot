@@ -12,7 +12,7 @@ const config = new ConfigProvider({
     PREFIX: '$',
     OWNER_ID: null,
     OWNER_REPORTING: false,
-    PRESENCE_REFRESH_INTERVAL: 15 * 60 * 1000, // 15 Minutes
+    PRESENCE_REFRESH_INTERVAL: 0.2 * 60 * 1000, // 15 Minutes
     DISCONNECT_TIMEOUT: 5 * 60 * 1000 // 5 Minutes
   },
   types: {
@@ -34,10 +34,10 @@ const client = new ExtendedClient({
   presence: {
     refreshInterval: config.get('PRESENCE_REFRESH_INTERVAL'),
     templates: [
-      '{num_guilds} servers!',
-      '{prefix}help for help.',
-      '{num_members} users!',
-      'up for {uptime}.'
+      'a sussurrare cose brutte ai bambini dislessici',
+      'con il suo incredibile prefisso: {prefix} ',
+      'con delle paperelle al parco',
+      'a giocare al gioco dei giocatori giocanti che giocano'
     ]
   }
 });
