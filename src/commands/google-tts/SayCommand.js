@@ -6,7 +6,7 @@ class SayCommand extends Command {
   constructor(client) {
     super(client, {
       name: 'say',
-      aliases: ['tts', 's'],
+      aliases: ['ts', 's'],
       description: 'Send a TTS message in your voice channel.',
       emoji: ':speaking_head:',
       group: 'google-tts',
